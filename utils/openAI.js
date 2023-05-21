@@ -6,7 +6,7 @@ export default function chatCompletion(_messages, _options = {}) {
 	dotenv.config()
 	
 	const configuration = new Configuration({
-	  apiKey: process.env.OPENAI_API_KEY,
+	  apiKey:"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"
 	});
 	
 	const openai = new OpenAIApi(configuration);
