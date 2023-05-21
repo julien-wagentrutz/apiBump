@@ -6,7 +6,7 @@ import { apiRouter } from './routes/api/index.js';
 
 //Config
 dotenv.config()
-
+const port = 3005
 const app = express();
 
 app.use(express.json());
@@ -22,6 +22,6 @@ app.get('/', (req, res) => {
 
 // Lance le serveur
 const { PORT } = process.env;
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
 });
