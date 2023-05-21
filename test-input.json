@@ -1,0 +1,75 @@
+{
+	"id": "identity",
+	"items": [
+		{
+			"id":"personality",
+			"items": [
+				{
+					"type":"text",
+					"question": "Si votre restaurant était une personne quelle seraient ses principales qualités ?",
+					"answer": "Accessible, Rapide, Consistant, Innovant, Familial, Responsable, Varié, Engagé"
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 10,
+					"question": "Informel / Formel", 
+					"answer": 4.5
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 10,
+					"question": "Rustique / Contemporain", 
+					"answer": 7
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 10,
+					"question": "Amical / Professionnel", 
+					"answer": 6
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 10,
+					"question": "décontracté / raffiné", 
+					"answer": 3
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 10,
+					"question": "Convivial / Luxe", 
+					"answer": 2
+				},
+				{
+					"type":"Checkbox",
+					"question": "Quelle est l’ambiance générale qui correspond le mieux à votre établissement ? ",
+					"answer": "Décontractée et conviviale"
+				},
+				{
+					"type":"Checkbox",
+					"question": "Quels type de plats votre restaurant mettra-t-il en avant ? ",
+					"answer": "Cuisine internationale"
+				},
+				{
+					"type":"Checkbox",
+					"question": "Comment souhaitez-vous que vos clients se sentent lorsqu’ils quittent votre restaurant ?",
+					"answer": "Satisfait et rassasiés "
+				},
+				{
+					"type":"Checkbox",
+					"question": "Quel niveau de personnalité souhaitez-vous offrir à vos clients ? ",
+					"answer": "Proposer une expérience de dégustation unique pour chaque table "
+				},
+				{
+					"type":"Checkbox",
+					"question": "Comment voulez-vous que votre restaurant soit perçu par les clients potentiels ? ",
+					"answer": "Comme un lieu convivial familiale"
+				}
+			]
+		}
+	]
+}
