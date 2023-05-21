@@ -27,7 +27,6 @@ function chatCompletion(_messages) {
   var config = {
     model: "gpt-3.5-turbo"
   };
-  console.log("tijidfnzif");
   return new Promise(function (resolve) {
     _openAI.openai.createChatCompletion(_objectSpread({}, config, {
       messages: _toConsumableArray(_messages)
