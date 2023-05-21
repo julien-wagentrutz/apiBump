@@ -3,7 +3,7 @@ import getRequestFromJSON from "../../utils/formateRequest.js";
 import chatCompletion from "../../utils/openAI.js";
 
 export const identityController = {
-	generate: async (req, res) => {
+	generate: (req, res) => {
 		let identity = []
 		const item = req.body
 		const ctx = getCtx(item.id);
@@ -16,8 +16,8 @@ export const identityController = {
 		} else {
 			question = `Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags sépraré par des points virgule qui représente la/le ${item.id} de cette marque`
 		}
-		setTimeout(async() => {
-			await chatCompletion([
+		setTimeout(() => {
+			chatCompletion([
 				{role: "user", content: ctx},
 				{role: "user", content: `Voici les questions et réponses du clients à un formulaire qu'on lui à envoyé pour défénir sa/son ${item.id} : \n ${data}`},
 				{role: "user", content: question}
