@@ -23,7 +23,7 @@ export const identityController = {
 			{role: "user", content: question}
 		]).then((resultat) => {
 			console.log(resultat);
-			res.status(200).json(response);
+			res.status(200).json(resultat);
 		})
 	},
 }
