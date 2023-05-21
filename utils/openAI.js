@@ -1,15 +1,6 @@
-import { Configuration, OpenAIApi } from "openai";
-import * as dotenv from 'dotenv'
+import { openai } from "../config/openAI.js"
 
 export default function chatCompletion(_messages, _options = {}) {
-
-	dotenv.config()
-	
-	const configuration = new Configuration({
-	  apiKey:"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"
-	});
-	
-	const openai = new OpenAIApi(configuration);
 
 	const config = {
 		model: "gpt-3.5-turbo",
