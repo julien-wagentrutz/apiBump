@@ -19,18 +19,14 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 // Routes import
 //Config
 dotenv.config();
-var app = (0, _express["default"])();
-app.use(_express["default"].json());
-app.use(_express["default"].urlencoded({
-  extended: true
-}));
+var app = (0, _express["default"])(); // app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+
 app.use((0, _cors["default"])()); //Routes
 
 app.use('/api', _index.apiRouter); // Lance le serveur
 
-var _ref = process.env || 3005,
-    PORT = _ref.PORT;
-
+var PORT = process.env.PORT;
 app.listen(PORT, function () {
   console.log("Server listening on port ".concat(PORT));
 });

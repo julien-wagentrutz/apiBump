@@ -9,15 +9,15 @@ dotenv.config()
 
 const app = express();
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 //Routes
 app.use('/api', apiRouter);
 
 // Lance le serveur
-const { PORT } = process.env || 3005;
+const { PORT } = process.env;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
