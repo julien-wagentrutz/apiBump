@@ -17,7 +17,7 @@ app.use(cors());
 app.use('/api', apiRouter);
 
 // Lance le serveur
-const { PORT } = process.env;
+const { PORT } = process.env || 3005;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
