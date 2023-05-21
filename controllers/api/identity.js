@@ -22,8 +22,7 @@ export const identityController = {
 			{role: "user", content: `Voici les questions et réponses du clients à un formulaire qu'on lui à envoyé pour défénir sa/son ${item.id} : \n ${data}`},
 			{role: "user", content: question}
 		]).then((resultat) => {
-			console.log(resultat);
-			res.status(200).json(resultat);
+			res.status(200).json({'gege': "goezjgo"});
 		})
 	},
 }
