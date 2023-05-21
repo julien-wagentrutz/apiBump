@@ -27,12 +27,12 @@ function chatCompletion(_messages) {
   var config = {
     model: "gpt-3.5-turbo"
   };
-  var data = new Promise(function (resolve) {
+  console.log("tijidfnzif");
+  return new Promise(function (resolve) {
     _openAI.openai.createChatCompletion(_objectSpread({}, config, {
       messages: _toConsumableArray(_messages)
     }, _options)).then(function (res) {
       resolve(res);
     });
   });
-  return data;
 }
