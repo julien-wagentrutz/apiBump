@@ -21,7 +21,7 @@ export const identityController = {
 			{role: "user", content: `Voici les questions et réponses du clients à un formulaire qu'on lui à envoyé pour défénir sa/son ${item.id} : \n ${data}`},
 			{role: "user", content: question}
 		])
-		res.status(200).json(reponse);
+		res.status(200).json(response);
 	},
 }
 
