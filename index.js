@@ -16,10 +16,6 @@ app.use(cors());
 //Routes
 app.use('/api', apiRouter);
 
-app.get('/', (req, res) => {
-	res.send("geggge")
-})
-
 // Lance le serveur
 const { PORT } = process.env;
 app.listen(PORT, () => {

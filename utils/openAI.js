@@ -1,6 +1,6 @@
 import { openai } from "../config/openAI.js"
 
-export const chatCompletion = async (_messages, _options = {}) => {
+export default async function chatCompletion(_messages, _options = {}) {
 
 	const config = {
 		model: "gpt-3.5-turbo",

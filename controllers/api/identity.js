@@ -1,5 +1,6 @@
-import { getCtx, getRequestFromJSON } from "../../utils/formateRequest.js";
-import { chatCompletion } from "../../utils/openAI.js";
+import getCtx from "../../utils/ctx.js";
+import getRequestFromJSON from "../../utils/formateRequest.js";
+import chatCompletion from "../../utils/openAI.js";
 
 export const identityController = {
 	generate: async (req, res) => {
@@ -7,6 +8,7 @@ export const identityController = {
 		const item = req.body
 		const ctx = getCtx(item.id);
 		const data = getRequestFromJSON(item)
+
 		let question;
 		if(item.id == "physique") {
 			question = `Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags, si c'est des couleurs hex donne juste les couleurs en hex sans d'autre text ni préciser à quoi elle correspond, sépraré par des points virgule qui représente la/le ${item.id} de cette marque`
