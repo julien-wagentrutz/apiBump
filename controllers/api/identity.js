@@ -16,17 +16,15 @@ export const identityController = {
 		} else {
 			question = `Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags sépraré par des points virgule qui représente la/le ${item.id} de cette marque`
 		}
-		setTimeout(() => {
-			chatCompletion([
-				{role: "user", content: ctx},
-				{role: "user", content: `Voici les questions et réponses du clients à un formulaire qu'on lui à envoyé pour défénir sa/son ${item.id} : \n ${data}`},
-				{role: "user", content: question}
-			]).then(resulat => {
-				identity = [...identity,{id: item.id, data: resulat.data.choices[0].message}]
-				console.log(identity);
-				res.status(200).json(identity);
-			})
-		}, 30000)
+		chatCompletion([
+			{role: "user", content: ctx},
+			{role: "user", content: `Voici les questions et réponses du clients à un formulaire qu'on lui à envoyé pour défénir sa/son ${item.id} : \n ${data}`},
+			{role: "user", content: question}
+		]).then(resulat => {
+			identity = [...identity,{id: item.id, data: resulat.data.choices[0].message}]
+			console.log(identity);
+			res.status(200).json(identity);
+		})
 	},
 }
 
