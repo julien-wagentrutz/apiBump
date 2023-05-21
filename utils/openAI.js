@@ -5,8 +5,10 @@ export default function chatCompletion(_messages, _options = {}) {
 	const config = {
 		model: "gpt-3.5-turbo",
 	}
-	const pro = new Promise((resolve) => {
-		setTimeout(() => {resolve({'f':"fff"}), 3000});
+	const data = new Promise((resolve) => {
+		openai.createChatCompletion({...config,messages: [..._messages],..._options}).then((res) => {
+			resolve(res)
+		})
 	})
-	return pro
+	return data
 }
