@@ -37,8 +37,10 @@ var identityController = {
       role: "user",
       content: question
     }]).then(function (resultat) {
-      console.log(resultat.data.choices);
-      res.status(200).json(resultat.data.choices[0].message.content);
+      res.status(200).json({
+        id: item.id,
+        message: resultat.data.choices[0].message.content
+      });
     });
   }
 };
