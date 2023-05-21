@@ -20,6 +20,10 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 //Config
 dotenv.config();
 var app = (0, _express["default"])();
+app.use(_express["default"].json());
+app.use(_express["default"].urlencoded({
+  extended: true
+}));
 app.use((0, _cors["default"])()); //Routes
 
 app.use('/api', _index.apiRouter); // Lance le serveur
