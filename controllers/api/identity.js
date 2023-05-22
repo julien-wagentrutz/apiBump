@@ -11,10 +11,10 @@ export const identityController = {
 
 		let question;
 		if(item.id == "physique") {
-			question = `Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags, si c'est des couleurs hex donne juste les couleurs en hex sans d'autre text ni préciser à quoi elle correspond, sépraré par des points virgule qui représente la/le ${item.id} de cette marque en enlevant les synonymes`
+			question = `Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags, si c'est des couleurs hex donne juste les couleurs en hex sans d'autre text ni préciser à quoi elle correspond, sépraré par des points virgule qui représente la/le ${item.id} de cette marque en enlevant les synonymes, pour chacun des tags suivie de celui précise entre parenthèse pourquoi il est présent`
 
 		} else {
-			question = `Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags sépraré par des points virgule qui représente la/le ${item.id} de cette marque en enlevant les synonymes`
+			question = `Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags sépraré par des points virgule qui représente la/le ${item.id} de cette marque en enlevant les synonymes, pour chacun des tags suivie de celui précise entre parenthèse pourquoi il est présent`
 		}
 		
 		chatCompletion([
