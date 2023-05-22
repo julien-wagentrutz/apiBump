@@ -22,9 +22,9 @@ var identityController = {
     var question;
 
     if (item.id == "physique") {
-      question = "Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags, si c'est des couleurs hex donne juste les couleurs en hex sans d'autre text ni pr\xE9ciser \xE0 quoi elle correspond, s\xE9prar\xE9 par des points virgule qui repr\xE9sente la/le ".concat(item.id, " de cette marque");
+      question = "Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags, si c'est des couleurs hex donne juste les couleurs en hex sans d'autre text ni pr\xE9ciser \xE0 quoi elle correspond, s\xE9prar\xE9 par des points virgule qui repr\xE9sente la/le ".concat(item.id, " de cette marque en enlevant les synonymes");
     } else {
-      question = "Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags s\xE9prar\xE9 par des points virgule qui repr\xE9sente la/le ".concat(item.id, " de cette marque");
+      question = "Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags s\xE9prar\xE9 par des points virgule qui repr\xE9sente la/le ".concat(item.id, " de cette marque en enlevant les synonymes");
     }
 
     (0, _openAI["default"])([{
