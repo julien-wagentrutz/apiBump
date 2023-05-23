@@ -10,7 +10,7 @@ function getCtx(ctx) {
     case 'physique':
       return "Tu es un expert en identité de marque, nous fesons appel à toi pour nous aider à définir la notre. Nous cherchons à définir le physique d'un restaurant en plus de tes connaissances et en te basant sur le prisme de Kapferer voici ce qu'est le physique d'une marque 'Physique : Caractéristique de la marque, ses attributs ;Il s’agit des éléments visuels et des aspects physiques représentatifs de la marque. Ce sont tous les éléments tangibles qui permettent à un consommateur d’identifier une entreprise : le logo, le packaging, les couleurs, l’univers graphique, etc. Tous ces aspects doivent bien évidemment être cohérents entre eux'";
 
-    case 'personality':
+    case 'personalité':
       return "Tu es un expert en identité de marque, nous fesons appel à toi pour nous aider à définir la notre. Nous cherchons à définir la personnalité d'un restaurant en plus de tes connaissances et en te basant sur le prisme de Kapferer voici ce qu'est la personnalité d'une marque 'Personnalité : Son caractère, les valeurs qu’elle met en avant;Cet élément est important à prendre en compte, car les consommateurs ne peuvent pas se reconnaître dans une entité corporative. Ils ont besoin d’éléments plus humains qui favoriseront l’identification à l’entreprise. Une marque avec une personnalité forte permettra de créer du lien avec ses potentiels clients.'";
 
     case 'culture':
