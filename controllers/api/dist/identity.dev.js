@@ -22,9 +22,11 @@ var identityController = {
     var question;
 
     if (item.id == "physique") {
-      question = "Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags, si c'est des couleurs hex donne juste les couleurs en hex sans d'autre text ni pr\xE9ciser \xE0 quoi elle correspond, s\xE9prar\xE9 par des points virgule qui repr\xE9sente la/le ".concat(item.id, " de cette marque en enlevant les synonymes, pour chacun des tags \xE0 la suite de celui ci, pr\xE9cise entre parenth\xE8se pourquoi il est pr\xE9sent");
+      // question = `Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags, si c'est des couleurs hex donne juste les couleurs en hex sans d'autre text ni préciser à quoi elle correspond, sépraré par des points virgule qui représente la/le ${item.id} de cette marque en enlevant les synonymes, pour chacun des tags à la suite de celui ci, précise entre parenthèse pourquoi il est présent`
+      question = "Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags, si c'est des couleurs hex donne juste les couleurs en hex sans d'autre text ni pr\xE9ciser \xE0 quoi elle correspond, s\xE9prar\xE9 par des points virgule qui repr\xE9sente la/le ".concat(item.id, " de cette marque en enlevant les synonymes");
     } else {
-      question = "Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags s\xE9prar\xE9 par des points virgule qui repr\xE9sente la/le ".concat(item.id, " de cette marque en enlevant les synonymes, pour chacun des tags \xE0 la suite de celui ci pr\xE9cise entre parenth\xE8se pourquoi il est pr\xE9sent");
+      // question = `Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags sépraré par des points virgule qui représente la/le ${item.id} de cette marque en enlevant les synonymes, pour chacun des tags à la suite de celui ci précise entre parenthèse pourquoi il est présent`
+      question = "Avec ces informations donner moi juste et uniquement une liste sans rien d'autre que des tags s\xE9prar\xE9 par des points virgule qui repr\xE9sente la/le ".concat(item.id, " de cette marque en enlevant les synonymes");
     }
 
     (0, _openAI["default"])([{
